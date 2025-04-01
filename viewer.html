@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Viewer</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+  <script>
+    // Function to extract a query parameter by name
+    function getQueryParam(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+    
+    window.onload = function() {
+      // Extract the product code from the URL, e.g., ?code=13685_V215
+      const productCode = getQueryParam('code');
+      if (productCode) {
+        // Build the URL to the product's index file.
+        // For instance, if your product files are stored in folders named after the product code:
+        const productUrl = productCode + '/index.html';
+        
+        // Set the iframe source to load the product's content
+        document.getElementById('productFrame').src = productUrl;
+      } else {
+        document.body.innerHTML = '<p>No product code provided in the URL.</p>';
+      }
+    }
+  </script>
+</head>
+<body>
+  <iframe id="productFrame"></iframe>
+</body>
+</html>
