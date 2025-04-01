@@ -54,20 +54,6 @@ html.ios body[class*='scaled-'] #container { position:absolute; top:0; left:0; }
 body.tall-page {overflow-y:auto;}
 .liquid .page.tall-page {height:auto;}
 
-@font-face {
-  font-family: "ginetex symbols";
-  src: url("../assets/font/Ginetex.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Wingdings 3";
-  src: url("../assets/font/Wingdings3.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 .paper-vertical:after {
     position:relative;
     content:' ';
@@ -468,6 +454,21 @@ body, #container-wrap { background:#ededed; }
 	.paper-vertical, .paper-horizontal { padding:0; }
 }
 
+#item1914_1918 {
+	width:49.9999999855186px !important;
+	position:relative;
+	left:auto !important;
+	top:auto !important;
+}
+
+#item1914 {
+	width:52px !important;
+	left:899px !important;
+	top:653px !important;
+	min-height:42px !important;
+	direction:ltr;
+}
+
 #item463 {
 	width:905px !important;
 	height:750px !important;
@@ -534,7 +535,7 @@ body, #container-wrap { background:#ededed; }
 	width:905px !important;
 	height:120px !important;
 	left:12px !important;
-	top:793px !important;
+	top:811px !important;
 	border-radius:12px;
 	border:solid 1px #7f7f7f;
 	padding:15px;
@@ -584,6 +585,14 @@ body, #container-wrap { background:#ededed; }
 	padding:0px 0px 0px 15px;
 	direction:ltr;
 }
+
+@font-face {
+  font-family: "ginetex symbols";
+  src: url("../assets/font/Ginetex.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 #item1147 {
 	width:910px !important;
@@ -823,14 +832,9 @@ p.No-Paragraph-Style {
 	text-align:left;
 }
 
-span.autoCharStyle4 {
+span.autoCharStyle3 {
 	font-weight:bold;
 	font-family:Arial,sans-serif;
-	font-size:44px;
-}
-
-span.autoCharStyle3 {
-	font-family:"Wingdings 3",Arial;
 	font-size:44px;
 }
 
@@ -856,4 +860,3 @@ span.Titles {
 
 span.None {
 }
-
