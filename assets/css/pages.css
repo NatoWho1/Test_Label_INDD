@@ -13,7 +13,8 @@ footer, header, hgroup, menu, nav, section {
 	display:block;
 }
 img {
-  touch-action: none;
+  -webkit-user-drag: none;
+  user-drag: none;
 }
 body { line-height:1; letter-spacing:-0.25px; overscroll-behavior:contain;}
 #container:not([style*="zoom"]) { -webkit-text-size-adjust:none;}
