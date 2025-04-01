@@ -56,14 +56,14 @@ body.tall-page {overflow-y:auto;}
 
 @font-face {
   font-family: "ginetex symbols";
-  src: url("../assets/font/ginetex.otf") format("opentype");
+  src: url("../assets/font/ginetex.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Wingdings 3';
-  src: url('../assets/font/Wingdings3.ttf') format('truetype');
+  font-family: "Wingdings 3";
+  src: url("../assets/font/Wingdings3.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
