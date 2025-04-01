@@ -16,21 +16,16 @@
     }
   </style>
   <script>
-    // Function to extract a query parameter by name
     function getQueryParam(name) {
       const urlParams = new URLSearchParams(window.location.search);
       return urlParams.get(name);
     }
     
     window.onload = function() {
-      // Extract the product code from the URL, e.g., ?code=13685_V215
       const productCode = getQueryParam('code');
       if (productCode) {
-        // Build the URL to the product's index file.
-        // For instance, if your product files are stored in folders named after the product code:
-        const productUrl = productCode + '/index.html';
-        
-        // Set the iframe source to load the product's content
+        // Adjusted to load "13685_V215.html" (for example)
+        const productUrl = productCode + '.html';
         document.getElementById('productFrame').src = productUrl;
       } else {
         document.body.innerHTML = '<p>No product code provided in the URL.</p>';
