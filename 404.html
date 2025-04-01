@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    // Get the current path from the URL
+    var path = window.location.pathname;
+    // If the path does not already end in ".html"
+    if (!path.endsWith('.html')) {
+      // Build the new URL by appending ".html"
+      var newUrl = window.location.origin + path + '.html';
+      // Redirect to the new URL
+      window.location.replace(newUrl);
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting... If you are not redirected automatically, <a id="redirectLink" href="#">click here</a>.</p>
+  <script>
+    // Set the redirect link in case automatic redirection fails
+    document.getElementById('redirectLink').href = window.location.pathname + '.html';
+  </script>
+</body>
+</html>
