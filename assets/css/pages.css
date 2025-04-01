@@ -56,8 +56,7 @@ body.tall-page {overflow-y:auto;}
 
 @font-face {
   font-family: "ginetex symbols";
-  src: url("../assets/font/ginetex.otf") format("opentype"),
-       url("../assets/font/ginetex.otf") format("opentype");
+  src: url("../assets/font/ginetex.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
